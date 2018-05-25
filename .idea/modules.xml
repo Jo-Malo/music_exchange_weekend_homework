@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/music_exchange.iml" filepath="$PROJECT_DIR$/.idea/modules/music_exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/music_exchange_main.iml" filepath="$PROJECT_DIR$/.idea/modules/music_exchange_main.iml" group="music_exchange" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/music_exchange_test.iml" filepath="$PROJECT_DIR$/.idea/modules/music_exchange_test.iml" group="music_exchange" />
+    </modules>
+  </component>
+</project>
