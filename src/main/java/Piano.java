@@ -1,11 +1,23 @@
-public class Piano extends Instrument {
+import Interfaces.IPlay;
+import Interfaces.ISell;
+
+public class Piano extends Instrument implements IPlay{
+    String description;
 
 
-    public Piano(String colour, String family){
-        super(colour, family);
+    public Piano(String colour, String family, String description){
+        super(colour, family, 2000.00, 800.00);
+        this.description = description;
     }
 
     public String play(String noise) {
         return "Piano makes a plinkyplonky noise";
+    }
+
+    public String getDescription(){
+        return "This piano is one of a kind";
+    }
+
+    public void addToIstock(ISell stock) {
     }
 }

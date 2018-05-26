@@ -5,10 +5,12 @@ import static org.junit.Assert.assertEquals;
 
 public class GuitarTest {
     Guitar guitar;
+    Shop shop;
 
     @Before
     public void before(){
-        guitar = new Guitar("maple", "Strings");
+        guitar = new Guitar("maple", "Strings", 6);
+        shop = new Shop();
     }
 
     @Test
@@ -22,8 +24,28 @@ public class GuitarTest {
     }
 
     @Test
+    public void canGetNumberOfStrings(){
+        assertEquals(6, guitar.getNumberOfStrings());
+    }
+
+    @Test
+    public void canGetSellingPrice(){
+        assertEquals(150.00, guitar.getSellingPrice(), 0.01);
+    }
+
+    @Test
+    public void canGetPriceBought(){
+        assertEquals(80.00, guitar.getPriceBought(), 0.01);
+    }
+
+    @Test
     public void canPlay(){
         String result = guitar.play("twang");
         assertEquals("Guitar makes a twang noise", result);
+    }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(70.00, guitar.getMarkUp(), 0.01);
     }
 }

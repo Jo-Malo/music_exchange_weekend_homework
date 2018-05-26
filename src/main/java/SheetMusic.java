@@ -1,6 +1,7 @@
-import Interfaces.IStock;
 
-public class SheetMusic extends Accessories {
+import Interfaces.ISell;
+
+public class SheetMusic extends Accessories{
 
     public SheetMusic(String description, double sellingPrice, double priceBought) {
         super(description, sellingPrice, priceBought);
@@ -10,4 +11,7 @@ public class SheetMusic extends Accessories {
         return super.getMarkUp();
     }
 
+    public void addToIstock(ISell stock) {
+
+    }
 }
