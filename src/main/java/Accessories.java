@@ -1,6 +1,7 @@
 import Interfaces.ISell;
+import Interfaces.IStock;
 
-public class Accessories implements ISell{
+public abstract class Accessories implements ISell, IStock{
     private String description;
     private double sellingPrice;
     private double priceBought;
@@ -25,5 +26,9 @@ public class Accessories implements ISell{
 
     public double getMarkUp(){
         return this.sellingPrice - this.priceBought;
+    }
+
+    public void add() {
+
     }
 }
