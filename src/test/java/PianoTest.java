@@ -1,6 +1,8 @@
+import Enums.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
+import static Enums.InstrumentType.KEYBOARD;
 import static org.junit.Assert.assertEquals;
 
 public class PianoTest {
@@ -9,7 +11,7 @@ public class PianoTest {
 
     @Before
     public void before(){
-        piano = new Piano("ferrari red", "Strings", "This piano ia one of a kind");
+        piano = new Piano("ferrari red", "Strings", "This piano ia one of a kind", KEYBOARD);
         shop = new Shop();
     }
 
@@ -42,6 +44,11 @@ public class PianoTest {
     public void canPlay(){
         String result = piano.play("plinkyplonky");
         assertEquals("Piano makes a plinkyplonky noise", result);
+    }
+
+    @Test
+    public void canGetInstrumentType() {
+        assertEquals(InstrumentType.KEYBOARD, piano.getInstrumentType());
     }
 
 }

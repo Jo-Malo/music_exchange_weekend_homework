@@ -1,3 +1,4 @@
+import Enums.InstrumentType;
 import Interfaces.IPlay;
 import Interfaces.ISell;
 
@@ -5,8 +6,8 @@ public class Piano extends Instrument implements IPlay{
     String description;
 
 
-    public Piano(String colour, String family, String description){
-        super(colour, family, 2000.00, 800.00);
+    public Piano(String colour, String family, String description, InstrumentType type){
+        super(colour, family, 2000.00, 800.00, type);
         this.description = description;
     }
 
@@ -19,5 +20,9 @@ public class Piano extends Instrument implements IPlay{
     }
 
     public void addToIstock(ISell stock) {
+    }
+
+    public InstrumentType getInstrumentType() {
+        return this.type;
     }
 }
