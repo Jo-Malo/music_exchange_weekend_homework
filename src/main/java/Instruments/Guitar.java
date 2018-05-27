@@ -1,4 +1,7 @@
+package Instruments;
+
 import Enums.InstrumentType;
+import Instruments.Instrument;
 import Interfaces.IPlay;
 import Interfaces.ISell;
 
@@ -12,7 +15,7 @@ public class Guitar extends Instrument implements IPlay{
     }
 
     public String play(String noise) {
-        return "Guitar makes a twang noise";
+        return "Instruments.Guitar makes a twang noise";
     }
 
     public void addToIstock(ISell stock) {

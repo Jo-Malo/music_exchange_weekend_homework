@@ -1,3 +1,5 @@
+package Instruments;
+
 import Enums.InstrumentType;
 import Interfaces.IPlay;
 import Interfaces.ISell;
@@ -37,7 +39,7 @@ public abstract class Instrument implements ISell, IPlay{
         return this.sellingPrice - this.priceBought;
     }
 
-    public InstrumentType getType() {
+    public InstrumentType getInstrumentType() {
         return this.type;
     }
 }

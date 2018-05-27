@@ -1,3 +1,5 @@
+package Instruments;
+
 import Enums.InstrumentType;
 import Interfaces.IPlay;
 import Interfaces.ISell;
@@ -12,7 +14,7 @@ public class Clarinet extends Instrument implements IPlay{
     }
 
     public String play(String noise) {
-        return "Clarinet makes a rootytooty noise";
+        return "Instruments.Clarinet makes a rootytooty noise";
     }
 
     public void addToIstock(ISell stock) {

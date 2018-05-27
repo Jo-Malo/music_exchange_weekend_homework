@@ -1,3 +1,5 @@
+package Accessories;
+
 import Interfaces.ISell;
 
 public abstract class Accessories implements ISell {

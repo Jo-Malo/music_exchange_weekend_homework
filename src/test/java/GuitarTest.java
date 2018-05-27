@@ -1,4 +1,5 @@
 import Enums.InstrumentType;
+import Instruments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -42,7 +43,7 @@ public class GuitarTest {
     @Test
     public void canPlay(){
         String result = guitar.play("twang");
-        assertEquals("Guitar makes a twang noise", result);
+        assertEquals("Instruments.Guitar makes a twang noise", result);
     }
 
     @Test

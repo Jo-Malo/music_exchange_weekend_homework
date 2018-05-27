@@ -1,4 +1,7 @@
+package Instruments;
+
 import Enums.InstrumentType;
+import Instruments.Instrument;
 import Interfaces.IPlay;
 import Interfaces.ISell;
 
@@ -12,7 +15,7 @@ public class Piano extends Instrument implements IPlay{
     }
 
     public String play(String noise) {
-        return "Piano makes a plinkyplonky noise";
+        return "Instruments.Piano makes a plinkyplonky noise";
     }
 
     public String getDescription(){

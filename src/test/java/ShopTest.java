@@ -1,3 +1,8 @@
+import Accessories.Accessories;
+import Accessories.SheetMusic;
+import Instruments.Guitar;
+import Instruments.Instrument;
+import Instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
 
