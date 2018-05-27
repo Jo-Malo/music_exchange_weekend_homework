@@ -1,6 +1,5 @@
 package Accessories;
 
-import Accessories.Accessories;
 import Interfaces.ISell;
 
 public class SheetMusic extends Accessories {
