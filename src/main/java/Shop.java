@@ -19,10 +19,6 @@ public class Shop {
         this.stockList.add(stock);
     }
 
-    public void addToIstock(Instrument instrument) {
-        this.stockList.add(instrument);
-    }
-
     public void removeStockFromIstock(Accessories accessories) {
         this.stockList.remove(0);
     }
